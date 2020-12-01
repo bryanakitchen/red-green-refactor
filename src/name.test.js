@@ -1,3 +1,4 @@
+const { getName } = require('./name');
 
 describe('getName function', () => {
     it('returns the name property of an object', () => {
