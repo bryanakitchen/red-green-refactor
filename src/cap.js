@@ -1,15 +1,15 @@
 const capitalizeAndFilter = array => {
     const newArray = [];
-    for(let i = 0; i < array.length; i++) {
-        const item = array[i];
+
+    array.map(item => {
         const upperItem = item.toUpperCase();
 
         if(upperItem.startsWith('F')) {
-            continue;
-        }else {
+            return;
+        } else {
             newArray.push(upperItem);
         }
-    }
+    })
     return newArray;
 }
 
